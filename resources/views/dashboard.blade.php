@@ -13,6 +13,7 @@
                 {{-- 投稿一覧 --}}
                 @include('microposts.microposts')
             </div>
+
         </div>
     @else
         <div class="prose hero bg-base-200 mx-auto max-w-full rounded">
