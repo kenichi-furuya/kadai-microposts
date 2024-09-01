@@ -20,7 +20,7 @@ class Micropost extends Model
     }
     public function favorite_users()
     {
-        return $this->belongsToMany(User::class, 'favorites', 'user_id', 'micropost_id')->withTimestamps(); //
+        return $this->belongsToMany(User::class, 'favorites', 'micropost_id', 'user_id')->withTimestamps(); //
     }
 
 }
